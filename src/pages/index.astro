@@ -18,7 +18,7 @@ export const prerender = true;
   <header>
     <div class="header-container">
       <div class="logo-container">
-        <img src="graphics/FINAL FCMS Logo proposal.png" alt="FCMS Logo" class="logo" width="180" height="50" />
+        <img src="graphics/IcoFCMSLogoproposal.png" alt="FCMS Logo" class="logo" width="288" height="80" />
         <!-- Fallback for SVG support -->
         <span class="logo-fallback">FCMS</span>
       </div>
@@ -121,5 +121,124 @@ export const prerender = true;
         </form>
       </div>
     </div>
+
+    <!-- Team Section -->
+    <div class="team-section glass-panel tilt-effect">
+      <h2 class="section-title">Our Team</h2>
+      <div class="divider"><span></span></div>
+
+      <div class="team-member">
+        <div class="team-member-image">
+          <img src="images/Kevin.jpeg" alt="Kevin W. Whitehead, Esq." class="member-photo" />
+        </div>
+        <div class="team-member-info">
+          <h3 class="member-name">Kevin W. Whitehead, Esq.</h3>
+          <p class="member-title">Founder & Lead Mediator</p>
+          <p class="member-bio">
+            Kevin is a distinguished attorney with extensive experience in mediation and litigation. Specializing in
+            personal injury, insurance claims, and dispute resolution, he has served as first chair for over 160 jury
+            trials and handled more than 50 appeals in Florida. As founder and President of Whitehead Law Group, Kevin
+            brings valuable expertise to Florida Court Mediation Services.
+          </p>
+          <div class="member-credentials">
+            <p>
+              <i class="fas fa-graduation-cap"></i> J.D. University of Miami (1995), B.A. George Washington University (1991)
+            </p>
+            <p><i class="fas fa-gavel"></i> Admitted to the Florida Bar (1995)</p>
+            <p>
+              <i class="fas fa-phone"></i>
+              <a href="tel:+13053386718">(305) 338-6718</a> | <i class="fas fa-envelope"></i>
+              <a href="mailto:kw@kwwpa.com">kw@kwwpa.com</a>
+            </p>
+          </div>
+          <button class="secondary-button" id="view-full-bio">
+            <span class="button-text">VIEW FULL BIO</span>
+          </button>
+        </div>
+      </div>
+    </div>
   </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-brand">
+        <p class="footer-title">Florida Court Mediation Services</p>
+        <p class="footer-tagline">Professional Resolution for Families</p>
+      </div>
+      <div class="footer-contact">
+        <p><i class="fas fa-envelope"></i> <a href="tel:+13053386718">(305) 338-6718</a></p>
+        <p><i class="fas fa-phone"></i> <a href="mailto:kw@kwwpa.com">kw@kwwpa.com</a></p>
+      </div>
+      <p class="copyright">
+        &copy; <span id="current-year">2025</span> Florida Court Mediation Services. All rights reserved.
+      </p>
+
+      <div class="footer-amor-marketing">
+        <a
+          href="http://amormarketingla.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit Amor Marketing's website"
+        >
+          <img
+            src="graphics/made-with-love.png"
+            alt="Made with love by Amor Marketing"
+            class="amor-logo"
+            width="200"
+            height="60"
+          />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bio Modal -->
+  <div class="modal" id="bio-modal">
+    <div class="modal-content glass-panel">
+      <span class="modal-close">&times;</span>
+      <h2>Kevin W. Whitehead, Esq.</h2>
+      <div class="divider"><span></span></div>
+
+      <div class="modal-body">
+        <h3>Areas of Concentration</h3>
+        <p>
+          Personal injury, personal injury protection (PIP), first party insurance claims, homeowners' claims, and
+          insurance coverage disputes. Currently serves as an expert witness for attorney fee hearings.
+        </p>
+
+        <h3>Experience</h3>
+        <p>
+          Litigated over tens of thousands of Personal Injury Protection (PIP) claims on behalf of medical care
+          providers. Represented tens of thousands of persons in personal injury claims and lawsuits. Served as first
+          chair for over 160 jury trials and handled over 50 appeals in Florida.
+        </p>
+
+        <h3>Current Role</h3>
+        <p>
+          Founding member and President of Kevin W. Whitehead, P.A., d/b/a Whitehead Law Group established in October
+          2010.
+        </p>
+
+        <h3>Education</h3>
+        <p>
+          B.A. George Washington University, 1991<br />
+          J.D. University of Miami, 1995
+        </p>
+
+        <h3>Admissions & Memberships</h3>
+        <p>
+          Admitted to the Florida Bar in 1995. Past Member United States District Court, Southern District of Florida.
+          Current Member of Miami Dade County Bar Association, Coral Gables Bar Association, American Trial Lawyers
+          Association (ATLA), Florida Justice Association, American Bar Association, and the Florida Bar Trial Lawyers
+          section.
+        </p>
+
+        <h3>Contact</h3>
+        <p>
+          Phone: <a href="tel:+13053386718">(305) 338-6718</a> Ext. 1<br />
+          Email: <a href="mailto:kw@kwwpa.com">kw@kwwpa.com</a>
+        </p>
+      </div>
+    </div>
+  </div>
 </Layout>
