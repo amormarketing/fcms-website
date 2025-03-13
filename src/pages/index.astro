@@ -5,5 +5,121 @@ export const prerender = true;
 ---
 
 <Layout>
-  <h1>Hello world</h1>
+  <!-- Background elements -->
+  <div class="particles"></div>
+  <div class="cursor-glow"></div>
+
+  <div class="bg-split">
+    <div class="bg-solid"></div>
+    <div class="bg-gradient-overlay"></div>
+    <div class="bg-pattern"></div>
+  </div>
+
+  <header>
+    <div class="header-container">
+      <div class="logo-container">
+        <img src="graphics/FINAL FCMS Logo proposal.png" alt="FCMS Logo" class="logo" width="180" height="50" />
+        <!-- Fallback for SVG support -->
+        <span class="logo-fallback">FCMS</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="content-wrapper">
+    <div class="panels-container">
+      <div class="text-panel glass-panel tilt-effect" aria-labelledby="coming-soon-title">
+        <div class="coming-soon-text">
+          <h1 id="coming-soon-title">Coming Soon</h1>
+          <div class="divider"><span></span></div>
+          <p>
+            Our new website is under construction. We're working to bring you a comprehensive resource for court
+            mediation services.
+          </p>
+          <p>In the meantime, please reach out below and our team of professional mediators will respond promptly.</p>
+
+          <div class="service-highlights">
+            <div class="service-item">
+              <i class="fas fa-balance-scale"></i>
+              <span>Fair Resolution</span>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-handshake"></i>
+              <span>Expert Mediation</span>
+            </div>
+            <div class="service-item">
+              <i class="fas fa-heart"></i>
+              <span>Family Focus</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact form with improved accessibility -->
+      <div class="form-panel glass-panel tilt-effect">
+        <h2 class="form-title">Contact Our Team</h2>
+        <form id="contact-form" novalidate>
+          <div class="name-row">
+            <div class="input-container">
+              <label for="firstName" class="visually-hidden">First Name</label>
+              <input
+                type="text"
+                id="firstName"
+                class="half-width"
+                placeholder="First Name"
+                name="firstName"
+                aria-required="true"
+                required
+              />
+              <div class="validation-message" id="firstName-validation" aria-live="assertive">
+                Please fill out this field
+              </div>
+            </div>
+            <div class="input-container">
+              <label for="lastName" class="visually-hidden">Last Name</label>
+              <input
+                type="text"
+                id="lastName"
+                class="half-width"
+                placeholder="Last Name"
+                name="lastName"
+                aria-required="true"
+                required
+              />
+              <div class="validation-message" id="lastName-validation" aria-live="assertive">
+                Please fill out this field
+              </div>
+            </div>
+          </div>
+          <div class="input-container">
+            <label for="email" class="visually-hidden">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Email Address" aria-required="true" required />
+            <div class="validation-message" id="email-validation" aria-live="assertive">
+              Please enter a valid email address
+            </div>
+          </div>
+          <div class="input-container phone-container">
+            <label for="phone" class="visually-hidden">Phone Number (Optional)</label>
+            <input type="tel" id="phone" name="phone" placeholder="Phone Number (Optional)" />
+          </div>
+          <div class="message-container">
+            <label for="message" class="visually-hidden">Your Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="How can we help with your mediation needs?"
+              maxlength="1000"
+              aria-describedby="character-counter"></textarea>
+            <div class="character-count" id="character-counter">
+              <span id="char-count">0</span>/1000
+            </div>
+          </div>
+          <button type="submit" id="submit-button" class="primary-button">
+            <span class="button-text">SEND MESSAGE</span>
+            <span class="loading-indicator"></span>
+          </button>
+          <div id="status-message" role="alert" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </main>
 </Layout>
